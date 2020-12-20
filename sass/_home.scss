@@ -206,6 +206,11 @@ a {
     }
   }
 }
+// // // // //
+// Hamburger menu
+.burger {
+  display: none;
+}
 
 // Media Queries For Different Devices
 
@@ -467,12 +472,25 @@ a {
 // For 539px and below (33.70em approx)
 
 @media screen and (max-width: 33.7em) {
+  // Hamburger menu
+  .burger {
+    display: block;
+    z-index: 15;
+
+    img {
+      display: block;
+      width: 5rem;
+      cursor: pointer;
+    }
+  }
+
   // Navbar Styling
 
   .navbar {
     height: 10vh;
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-bottom: 10rem;
+    padding: 0 2rem;
 
     // Logo
     .logo-container {
@@ -485,7 +503,40 @@ a {
 
     // Nav Links
     .nav-items {
-      display: none;
+      font-size: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: absolute;
+      height: 90vh;
+      width: 80vw;
+      background-color: #1c4e46;
+      top: 10vh;
+      right: 0;
+      z-index: 10;
+      transform: translateX(100%);
+      transition: all 0.3s ease-in-out;
+
+      .item1,
+      .item2,
+      .item3 {
+        margin: 3rem 0;
+      }
+      .item4 {
+        margin-left: 0;
+        margin: 3rem 0;
+
+        //   Hire me button
+        .btn-hire {
+          padding: 1rem 1.5rem;
+          font-size: 2.2rem;
+        }
+      }
+    }
+    .nav-active {
+      transform: translateX(0%);
     }
   }
 

@@ -135,6 +135,9 @@ a {
           .footer-main .footer-container .social-container .social-links a:hover {
             opacity: 0.8; }
 
+.burger {
+  display: none; }
+
 @media screen and (max-width: 80em) {
   .header-container {
     max-width: 980px; }
@@ -263,16 +266,50 @@ a {
               width: 3rem; } }
 
 @media screen and (max-width: 33.7em) {
+  .burger {
+    display: block;
+    z-index: 15; }
+    .burger img {
+      display: block;
+      width: 5rem;
+      cursor: pointer; }
   .navbar {
     height: 10vh;
-    font-size: 1.6rem;
-    margin-bottom: 10rem; }
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    padding: 0 2rem; }
     .navbar .logo-container .logo {
       font-family: "Oswald", sans-serif;
       font-size: 2.8rem;
       letter-spacing: 1px; }
     .navbar .nav-items {
-      display: none; }
+      font-size: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: absolute;
+      height: 90vh;
+      width: 80vw;
+      background-color: #1c4e46;
+      top: 10vh;
+      right: 0;
+      z-index: 10;
+      transform: translateX(100%);
+      transition: all 0.3s ease-in-out; }
+      .navbar .nav-items .item1,
+      .navbar .nav-items .item2,
+      .navbar .nav-items .item3 {
+        margin: 3rem 0; }
+      .navbar .nav-items .item4 {
+        margin-left: 0;
+        margin: 3rem 0; }
+        .navbar .nav-items .item4 .btn-hire {
+          padding: 1rem 1.5rem;
+          font-size: 2.2rem; }
+    .navbar .nav-active {
+      transform: translateX(0%); }
   .header-container {
     justify-content: flex-start;
     max-width: 380px;
