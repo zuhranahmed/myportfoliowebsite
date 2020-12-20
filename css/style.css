@@ -276,7 +276,7 @@ a {
   .header-container {
     justify-content: flex-start;
     max-width: 380px;
-    height: 55vh; }
+    height: 60vh; }
     .header-container .header-desc {
       font-size: 5rem;
       line-height: 1.2;
@@ -289,7 +289,7 @@ a {
       .header-container .readmore-container .btn-about {
         padding: 0.75rem 1rem; }
   .footer-main {
-    height: 20vh; }
+    height: 30vh; }
     .footer-main .footer-container {
       display: flex;
       flex-direction: column;
