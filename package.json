@@ -1,0 +1,14 @@
+{
+  "name": "zuhranahmedportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass -w sass/main.scss css/style.css"
+  },
+  "author": "zuhranahmed",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
