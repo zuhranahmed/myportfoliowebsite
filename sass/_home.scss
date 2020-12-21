@@ -13,6 +13,7 @@ body {
   line-height: 1.6;
   background-color: $base-color;
   color: $font-color;
+  overflow-x: scroll;
 }
 
 a {
@@ -472,6 +473,9 @@ a {
 // For 539px and below (33.70em approx)
 
 @media screen and (max-width: 33.7em) {
+  body {
+    overflow-x: hidden;
+  }
   // Hamburger menu
   .burger {
     display: block;
