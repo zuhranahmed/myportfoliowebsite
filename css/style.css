@@ -416,10 +416,10 @@ a {
       line-height: 1.2;
       margin-bottom: 4rem; }
     .header-container .header-details {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       width: 80vw; }
     .header-container .readmore-container {
-      font-size: 1.6rem; }
+      font-size: 1.8rem; }
       .header-container .readmore-container .btn-about {
         padding: 0.75rem 1rem; }
   .footer-main {
@@ -462,7 +462,7 @@ a {
       line-height: 1.2; }
     .about-container .about-details {
       margin: 4rem 0 2rem 0;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       line-height: 1.9;
       text-align: center; }
       .about-container .about-details p {
@@ -477,7 +477,7 @@ a {
       align-self: center;
       margin-top: 2rem;
       padding: 0.75rem 1rem;
-      font-size: 1.6rem; } }
+      font-size: 1.8rem; } }
 
 * {
   margin: 0;
