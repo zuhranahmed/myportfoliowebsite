@@ -466,7 +466,7 @@ a {
       line-height: 1.9;
       text-align: center; }
       .about-container .about-details p {
-        width: 90%;
+        width: 95%;
         margin: 0 auto; }
       .about-container .about-details .para-1,
       .about-container .about-details .para-2,
@@ -488,10 +488,10 @@ html {
   font-size: 62.5%; }
   @media screen and (min-width: 33.75em) and (max-width: 48em) {
     html {
-      font-size: 52.5%; } }
+      font-size: 55%; } }
   @media screen and (max-width: 33.7em) {
     html {
-      font-size: 45%; } }
+      font-size: 50%; } }
 
 ul {
   list-style: none; }
