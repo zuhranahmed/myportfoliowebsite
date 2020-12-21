@@ -15,7 +15,7 @@ body {
   color: $font-color;
   .wrapper {
     position: relative;
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
 }
 
@@ -476,6 +476,10 @@ a {
 // For 539px and below (33.70em approx)
 
 @media screen and (max-width: 33.7em) {
+  .wrapper {
+    position: fixed;
+    overflow-x: hidden;
+  }
   // Hamburger menu
   .burger {
     display: block;
