@@ -1,4 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Oswald:wght@400;500;700&display=swap");
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1140px;
+  margin: 4rem auto 6rem auto;
+  padding: 0 1rem;
+  font-family: "Montserrat", sans-serif; }
+  .about-container .about-me {
+    font-family: "Oswald", sans-serif;
+    font-size: 8rem;
+    margin: 0 0 2rem 0;
+    letter-spacing: 1px; }
+  .about-container .my-image img {
+    width: 100%;
+    display: block; }
+  .about-container .about-details {
+    margin: 6rem 0 3rem 0;
+    font-size: 1.8rem;
+    line-height: 1.8; }
+    .about-container .about-details p {
+      width: 90%; }
+      .about-container .about-details p strong {
+        letter-spacing: 1px;
+        color: #1c4e46;
+        background-color: #ffffff; }
+    .about-container .about-details .para-1,
+    .about-container .about-details .para-2,
+    .about-container .about-details .para-3 {
+      margin-bottom: 2rem; }
+  .about-container .work-btn {
+    padding: 1rem 1.5rem;
+    border: 1px solid #fff;
+    font-size: 2rem;
+    transition: all 0.2s ease; }
+    .about-container .work-btn:hover {
+      background-color: #fff;
+      color: #1c4e46; }
+
 body {
   font-size: 1.6rem;
   line-height: 1.6;
@@ -151,7 +191,14 @@ a {
     .header-container .header-details {
       font-size: 1.7rem;
       width: 60vw;
-      margin-bottom: 3rem; } }
+      margin-bottom: 3rem; }
+  .about-container {
+    max-width: 980px; }
+    .about-container .about-me {
+      font-size: 7rem; }
+    .about-container .about-details {
+      font-size: 1.7rem;
+      line-height: 1.7; } }
 
 @media screen and (min-width: 48em) and (max-width: 61.25em) {
   .navbar {
@@ -194,7 +241,21 @@ a {
   .footer-main .footer-container .social-container .social-links a {
     margin-left: 1rem; }
     .footer-main .footer-container .social-container .social-links a img {
-      width: 2.5rem; } }
+      width: 2.5rem; }
+  .about-container {
+    max-width: 880px;
+    margin: 3rem auto 5rem auto; }
+    .about-container .about-me {
+      font-size: 6.5rem; }
+    .about-container .my-image img {
+      width: 100%;
+      display: block; }
+    .about-container .about-details {
+      margin: 4rem 0 3rem 0;
+      font-size: 1.6rem;
+      line-height: 1.6; }
+    .about-container .work-btn {
+      font-size: 1.8rem; } }
 
 @media screen and (min-width: 33.75em) and (max-width: 48em) {
   .navbar {
@@ -266,9 +327,39 @@ a {
             margin-left: 0rem;
             margin-right: 1rem; }
             .footer-main .footer-container .social-container .social-links a img {
-              width: 3rem; } }
+              width: 3rem; }
+  .about-container {
+    max-width: 680px;
+    margin: 3rem auto 4rem auto; }
+    .about-container .about-me {
+      font-size: 5.5rem;
+      line-height: 1.2; }
+    .about-container .about-details {
+      margin: 4rem 0 2rem 0;
+      font-size: 1.6rem;
+      line-height: 1.5; }
+      .about-container .about-details .para-1,
+      .about-container .about-details .para-2,
+      .about-container .about-details .para-3 {
+        margin-bottom: 1.5rem; }
+    .about-container .work-btn {
+      padding: 0.75rem 1rem;
+      font-size: 1.6rem; } }
 
 @media screen and (max-width: 33.7em) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 5;
+    transition: all 0.5s; }
+  .hidden {
+    visibility: hidden;
+    opacity: 0; }
   .wrapper {
     position: fixed;
     overflow-x: hidden; }
@@ -296,10 +387,10 @@ a {
       align-items: center;
       text-align: center;
       position: absolute;
-      height: 90vh;
+      height: 100vh;
       width: 80vw;
       background-color: #1c4e46;
-      top: 10vh;
+      top: 0;
       right: 0;
       z-index: 10;
       transform: translateX(100%);
@@ -361,7 +452,32 @@ a {
             margin-right: 1.5rem;
             margin-top: 1rem; }
             .footer-main .footer-container .social-container .social-links a img {
-              width: 4rem; } }
+              width: 4rem; }
+  .about-container {
+    max-width: 380px;
+    margin: 3rem auto 4rem auto; }
+    .about-container .about-me {
+      font-family: "Oswald", sans-serif;
+      font-size: 5rem;
+      line-height: 1.2; }
+    .about-container .about-details {
+      margin: 4rem 0 2rem 0;
+      font-size: 1.6rem;
+      line-height: 1.9;
+      text-align: center; }
+      .about-container .about-details p {
+        width: 90%;
+        margin: 0 auto; }
+      .about-container .about-details .para-1,
+      .about-container .about-details .para-2,
+      .about-container .about-details .para-3 {
+        margin-bottom: 1.5rem; }
+    .about-container .work-btn {
+      justify-self: center;
+      align-self: center;
+      margin-top: 2rem;
+      padding: 0.75rem 1rem;
+      font-size: 1.6rem; } }
 
 * {
   margin: 0;
