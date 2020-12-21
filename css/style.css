@@ -488,10 +488,10 @@ html {
   font-size: 62.5%; }
   @media screen and (min-width: 33.75em) and (max-width: 48em) {
     html {
-      font-size: 50%; } }
+      font-size: 52.5%; } }
   @media screen and (max-width: 33.7em) {
     html {
-      font-size: 40%; } }
+      font-size: 45%; } }
 
 ul {
   list-style: none; }
