@@ -3,8 +3,10 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   background-color: #1c4e46;
-  color: #ffffff;
-  overflow-x: scroll; }
+  color: #ffffff; }
+  body .wrapper {
+    position: relative;
+    overflow-x: scroll; }
 
 a {
   color: #ffffff; }
@@ -267,8 +269,6 @@ a {
               width: 3rem; } }
 
 @media screen and (max-width: 33.7em) {
-  body {
-    overflow-x: hidden; }
   .burger {
     display: block;
     z-index: 15; }
