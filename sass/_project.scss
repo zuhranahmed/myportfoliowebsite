@@ -1,0 +1,26 @@
+// Variables
+
+$base-color: #1c4e46;
+$font-color: #ffffff;
+
+$base-font: "Montserrat", sans-serif;
+$heading-font: "Oswald", sans-serif;
+
+// Projects Container
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1140px;
+  margin: 4rem auto 6rem auto;
+  padding: 0 1rem;
+  font-family: $base-font;
+
+  .my-projects {
+    font-family: $heading-font;
+    font-size: 8rem;
+    margin: 0 0 2rem 0;
+    letter-spacing: 1px;
+  }
+}

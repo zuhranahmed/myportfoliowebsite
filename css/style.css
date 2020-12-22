@@ -39,6 +39,99 @@
       background-color: #fff;
       color: #1c4e46; }
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1140px;
+  margin: 4rem auto 6rem auto;
+  padding: 0 1rem;
+  font-family: "Montserrat", sans-serif; }
+  .contact-container h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 8rem;
+    margin: 0 0 2rem 0;
+    letter-spacing: 1px; }
+  .contact-container .form-container {
+    margin: 6rem 0 3rem 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .contact-container .form-container .form {
+      padding: 6rem;
+      background-color: #ffffff;
+      color: #1c4e46;
+      min-width: 70rem; }
+      .contact-container .form-container .form .names {
+        display: flex;
+        margin-bottom: 3rem; }
+        .contact-container .form-container .form .names .first-name {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          margin-right: 2rem;
+          flex: 1; }
+        .contact-container .form-container .form .names .last-name {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          flex: 1; }
+      .contact-container .form-container .form .email {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        margin-bottom: 3rem; }
+      .contact-container .form-container .form .message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        margin-bottom: 3rem; }
+      .contact-container .form-container .form label {
+        margin-bottom: 1.5rem; }
+      .contact-container .form-container .form input {
+        font-size: 1.8rem;
+        color: #1c4e46;
+        padding: 0.75rem 1rem;
+        border: 0;
+        border-bottom: 3px solid #1c4e46;
+        outline: none; }
+        .contact-container .form-container .form input:focus {
+          border-bottom: 3px solid orange; }
+      .contact-container .form-container .form textarea {
+        resize: none;
+        font-size: 1.8rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        color: #1c4e46;
+        padding: 0.75rem 1rem;
+        border: 0;
+        border-bottom: 3px solid #1c4e46;
+        outline: none; }
+        .contact-container .form-container .form textarea:focus {
+          border-bottom: 3px solid orange; }
+    .contact-container .form-container .submit-btn {
+      cursor: pointer;
+      border: 0;
+      padding: 1rem 1.5rem;
+      border: 1px solid #1c4e46;
+      background-color: #1c4e46;
+      color: #fff;
+      font-size: 2rem;
+      transition: all 0.2s ease; }
+      .contact-container .form-container .submit-btn:hover {
+        border: 1px solid #1c4e46;
+        background-color: #fff;
+        color: #1c4e46; }
+
 body {
   font-size: 1.6rem;
   line-height: 1.6;
@@ -71,6 +164,8 @@ a {
     align-items: center;
     font-size: 1.8rem;
     font-weight: 300; }
+    .navbar .nav-items .nav-link {
+      transition: all 0.5s ease; }
     .navbar .nav-items .item1,
     .navbar .nav-items .item2,
     .navbar .nav-items .item3 {
@@ -180,6 +275,21 @@ a {
 
 .burger {
   display: none; }
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1140px;
+  margin: 4rem auto 6rem auto;
+  padding: 0 1rem;
+  font-family: "Montserrat", sans-serif; }
+  .projects-container .my-projects {
+    font-family: "Oswald", sans-serif;
+    font-size: 8rem;
+    margin: 0 0 2rem 0;
+    letter-spacing: 1px; }
 
 @media screen and (max-width: 80em) {
   .header-container {
