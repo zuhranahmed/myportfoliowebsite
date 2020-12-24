@@ -308,7 +308,11 @@ a {
       font-size: 7rem; }
     .about-container .about-details {
       font-size: 1.7rem;
-      line-height: 1.7; } }
+      line-height: 1.7; }
+  .contact-container {
+    max-width: 980px; }
+    .contact-container h1 {
+      font-size: 7rem; } }
 
 @media screen and (min-width: 48em) and (max-width: 61.25em) {
   .navbar {
@@ -365,7 +369,24 @@ a {
       font-size: 1.6rem;
       line-height: 1.6; }
     .about-container .work-btn {
-      font-size: 1.8rem; } }
+      font-size: 1.8rem; }
+  .contact-container {
+    max-width: 880px;
+    margin: 3rem auto 5rem auto; }
+    .contact-container h1 {
+      font-size: 6.5rem; }
+    .contact-container .form-container {
+      margin: 4rem 0 3rem 0;
+      font-size: 1.6rem; }
+      .contact-container .form-container .form {
+        padding: 4rem; }
+        .contact-container .form-container .form input {
+          font-size: 1.6rem; }
+        .contact-container .form-container .form textarea {
+          font-size: 1.6rem; }
+      .contact-container .form-container .submit-btn {
+        padding: 0.75rem 1rem;
+        font-size: 1.8rem; } }
 
 @media screen and (min-width: 33.75em) and (max-width: 48em) {
   .navbar {
@@ -454,7 +475,42 @@ a {
         margin-bottom: 1.5rem; }
     .about-container .work-btn {
       padding: 0.75rem 1rem;
-      font-size: 1.6rem; } }
+      font-size: 1.6rem; }
+  .contact-container {
+    max-width: 680px;
+    margin: 3rem auto 4rem auto; }
+    .contact-container h1 {
+      font-size: 5.5rem;
+      line-height: 1.2; }
+    .contact-container .form-container {
+      margin: 4rem 0 2rem 0;
+      font-size: 1.6rem;
+      padding: 0 1rem;
+      line-height: 1.5; }
+      .contact-container .form-container .form {
+        padding: 3rem;
+        min-width: 60rem; }
+        .contact-container .form-container .form .names {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 3rem; }
+          .contact-container .form-container .form .names .first-name {
+            margin-right: 0rem;
+            margin-bottom: 3rem; }
+        .contact-container .form-container .form .email {
+          margin-bottom: 3rem; }
+        .contact-container .form-container .form .message {
+          margin-bottom: 3rem; }
+        .contact-container .form-container .form label {
+          margin-bottom: 1.5rem; }
+        .contact-container .form-container .form input {
+          font-size: 1.6rem; }
+        .contact-container .form-container .form textarea {
+          resize: none;
+          font-size: 1.6rem; }
+      .contact-container .form-container .submit-btn {
+        padding: 0.75rem 1rem;
+        font-size: 1.8rem; } }
 
 @media screen and (max-width: 33.7em) {
   .overlay {
@@ -587,7 +643,44 @@ a {
       align-self: center;
       margin-top: 2rem;
       padding: 0.75rem 1rem;
-      font-size: 2.4rem; } }
+      font-size: 2.4rem; }
+  .contact-container {
+    max-width: 380px;
+    margin: 3rem auto 4rem auto; }
+    .contact-container h1 {
+      font-family: "Oswald", sans-serif;
+      font-size: 5rem; }
+    .contact-container .form-container {
+      margin: 4rem 0 2rem 0;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.2;
+      padding: 0 1rem; }
+      .contact-container .form-container .form {
+        padding: 4rem;
+        background-color: #ffffff;
+        color: #1c4e46;
+        min-width: 45rem; }
+        .contact-container .form-container .form .names {
+          margin-bottom: 3rem;
+          flex-direction: column; }
+          .contact-container .form-container .form .names .first-name {
+            margin-right: 0rem;
+            margin-bottom: 3rem; }
+        .contact-container .form-container .form .email {
+          margin-bottom: 3rem; }
+        .contact-container .form-container .form .message {
+          margin-bottom: 3rem; }
+        .contact-container .form-container .form label {
+          margin-bottom: 1rem; }
+        .contact-container .form-container .form input {
+          font-size: 1.6rem; }
+        .contact-container .form-container .form textarea {
+          resize: none;
+          font-size: 1.6rem; }
+      .contact-container .form-container .submit-btn {
+        padding: 0.75rem 1rem;
+        font-size: 1.6rem; } }
 
 * {
   margin: 0;

@@ -36,6 +36,15 @@
       line-height: 1.7;
     }
   }
+
+  // Contact Container
+  .contact-container {
+    max-width: 980px;
+
+    h1 {
+      font-size: 7rem;
+    }
+  }
 }
 
 // For 61.25em = 980px & 768px = 48em
@@ -163,6 +172,39 @@
 
     .work-btn {
       font-size: 1.8rem;
+    }
+  }
+
+  // Contact Container
+  .contact-container {
+    max-width: 880px;
+    margin: 3rem auto 5rem auto;
+
+    h1 {
+      font-size: 6.5rem;
+    }
+
+    .form-container {
+      margin: 4rem 0 3rem 0;
+      font-size: 1.6rem;
+
+      .form {
+        padding: 4rem;
+
+        // Input values styling
+        input {
+          font-size: 1.6rem;
+        }
+
+        // Textarea
+        textarea {
+          font-size: 1.6rem;
+        }
+      }
+      .submit-btn {
+        padding: 0.75rem 1rem;
+        font-size: 1.8rem;
+      }
     }
   }
 }
@@ -325,6 +367,67 @@
       padding: 0.75rem 1rem;
 
       font-size: 1.6rem;
+    }
+  }
+
+  // Contact Container
+  .contact-container {
+    max-width: 680px;
+    margin: 3rem auto 4rem auto;
+
+    h1 {
+      font-size: 5.5rem;
+      line-height: 1.2;
+    }
+
+    .form-container {
+      margin: 4rem 0 2rem 0;
+      font-size: 1.6rem;
+      padding: 0 1rem;
+
+      line-height: 1.5;
+
+      .form {
+        padding: 3rem;
+        min-width: 60rem;
+
+        .names {
+          display: flex;
+          flex-direction: column;
+
+          margin-bottom: 3rem;
+          .first-name {
+            margin-right: 0rem;
+            margin-bottom: 3rem;
+          }
+        }
+
+        .email {
+          margin-bottom: 3rem;
+        }
+        .message {
+          margin-bottom: 3rem;
+        }
+        // Label styling
+        label {
+          margin-bottom: 1.5rem;
+        }
+
+        // Input values styling
+        input {
+          font-size: 1.6rem;
+        }
+
+        // Textarea
+        textarea {
+          resize: none;
+          font-size: 1.6rem;
+        }
+      }
+      .submit-btn {
+        padding: 0.75rem 1rem;
+        font-size: 1.8rem;
+      }
     }
   }
 }
@@ -539,6 +642,68 @@
       padding: 0.75rem 1rem;
 
       font-size: 2.4rem;
+    }
+  }
+
+  // Contact Container
+  .contact-container {
+    max-width: 380px;
+    margin: 3rem auto 4rem auto;
+
+    h1 {
+      font-family: $heading-font;
+      font-size: 5rem;
+    }
+
+    .form-container {
+      margin: 4rem 0 2rem 0;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.2;
+      padding: 0 1rem;
+
+      .form {
+        padding: 4rem;
+        background-color: #ffffff;
+        color: $base-color;
+        min-width: 45rem;
+
+        .names {
+          margin-bottom: 3rem;
+          flex-direction: column;
+          .first-name {
+            margin-right: 0rem;
+            margin-bottom: 3rem;
+          }
+        }
+
+        .email {
+          margin-bottom: 3rem;
+        }
+        .message {
+          margin-bottom: 3rem;
+        }
+        // Label styling
+        label {
+          margin-bottom: 1rem;
+        }
+
+        // Input values styling
+        input {
+          font-size: 1.6rem;
+        }
+
+        // Textarea
+        textarea {
+          resize: none;
+          font-size: 1.6rem;
+        }
+      }
+      .submit-btn {
+        padding: 0.75rem 1rem;
+
+        font-size: 1.6rem;
+      }
     }
   }
 }
