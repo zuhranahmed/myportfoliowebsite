@@ -34,7 +34,12 @@ $heading-font: "Oswald", sans-serif;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       margin-bottom: 6rem;
-
+      .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+      }
       .left {
         padding-right: 2rem;
         .project-title {
