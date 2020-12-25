@@ -37,12 +37,29 @@
     }
   }
 
-  // Contact Container
-  .contact-container {
+  // Projects Container
+  .projects-container {
     max-width: 980px;
 
-    h1 {
+    .my-projects {
+      font-family: $heading-font;
       font-size: 7rem;
+    }
+
+    .projects {
+      .project {
+        margin-bottom: 5rem;
+
+        .left {
+          padding-right: 1rem;
+          .project-title {
+            font-size: 2.5rem;
+          }
+          .project-details {
+            margin-bottom: 2.5rem;
+          }
+        }
+      }
     }
   }
 }
@@ -115,21 +132,6 @@
         font-size: 1.4rem;
       }
 
-      // Email Container
-      .email-container {
-        p {
-          font-size: 1.4rem;
-        }
-        a {
-          font-size: 1.4rem;
-          border-bottom: 1px dotted #1c4e46;
-
-          &:hover {
-            border-bottom: 1px solid #1c4e46;
-          }
-        }
-      }
-
       // Social Links Container
       .social-container {
         p {
@@ -175,35 +177,38 @@
     }
   }
 
-  // Contact Container
-  .contact-container {
+  // Projects Container
+  .projects-container {
     max-width: 880px;
     margin: 3rem auto 5rem auto;
 
-    h1 {
+    .my-projects {
       font-size: 6.5rem;
     }
 
-    .form-container {
-      margin: 4rem 0 3rem 0;
-      font-size: 1.6rem;
+    .projects {
+      .project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 4rem;
 
-      .form {
-        padding: 4rem;
-
-        // Input values styling
-        input {
-          font-size: 1.6rem;
+        .left {
+          padding-right: 1rem;
+          .project-title {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+          }
+          .project-details {
+            margin-bottom: 2rem;
+            font-size: 1.6rem;
+          }
+          .btn-visit {
+            font-size: 1.8rem;
+          }
+          .btn-source {
+            font-size: 1.8rem;
+          }
         }
-
-        // Textarea
-        textarea {
-          font-size: 1.6rem;
-        }
-      }
-      .submit-btn {
-        padding: 0.75rem 1rem;
-        font-size: 1.8rem;
       }
     }
   }
@@ -300,18 +305,6 @@
         margin-bottom: 2rem;
       }
 
-      // Email Container
-      .email-container {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 2rem;
-
-        p {
-          margin-right: 0rem;
-          margin-bottom: 0.5rem;
-        }
-      }
-
       // Social Links Container
       .social-container {
         flex-direction: column;
@@ -370,63 +363,45 @@
     }
   }
 
-  // Contact Container
-  .contact-container {
+  // Projects Container
+  .projects-container {
     max-width: 680px;
     margin: 3rem auto 4rem auto;
 
-    h1 {
-      font-size: 5.5rem;
+    .my-projects {
       line-height: 1.2;
+      font-size: 5.5rem;
     }
 
-    .form-container {
-      margin: 4rem 0 2rem 0;
-      font-size: 1.6rem;
-      padding: 0 1rem;
+    .projects {
+      .project {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 4rem;
 
-      line-height: 1.5;
-
-      .form {
-        padding: 3rem;
-        min-width: 60rem;
-
-        .names {
-          display: flex;
-          flex-direction: column;
-
-          margin-bottom: 3rem;
-          .first-name {
-            margin-right: 0rem;
-            margin-bottom: 3rem;
+        .left {
+          padding-right: 0rem;
+          margin-bottom: 2rem;
+          .project-title {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+          }
+          .project-details {
+            margin-bottom: 2rem;
+            font-size: 1.6rem;
+          }
+          .btn-visit {
+            padding: 0.75rem 1rem;
+            font-size: 1.8rem;
+          }
+          .btn-source {
+            padding: 0.75rem 1rem;
+            font-size: 1.8rem;
+          }
+          a {
+            margin-right: 1rem;
           }
         }
-
-        .email {
-          margin-bottom: 3rem;
-        }
-        .message {
-          margin-bottom: 3rem;
-        }
-        // Label styling
-        label {
-          margin-bottom: 1.5rem;
-        }
-
-        // Input values styling
-        input {
-          font-size: 1.6rem;
-        }
-
-        // Textarea
-        textarea {
-          resize: none;
-          font-size: 1.6rem;
-        }
-      }
-      .submit-btn {
-        padding: 0.75rem 1rem;
-        font-size: 1.8rem;
       }
     }
   }
@@ -529,7 +504,7 @@
   .header-container {
     justify-content: flex-start;
     max-width: 380px;
-    height: 60vh;
+    height: 65vh;
 
     //   Header Description
     .header-desc {
@@ -558,26 +533,19 @@
   // Footer Styling
 
   .footer-main {
-    height: 30vh;
+    height: 25vh;
 
     .footer-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
 
       // Copyright
       .copyright {
         font-size: 1.4rem;
         margin-bottom: 2rem;
-      }
-
-      // Email Container
-      .email-container {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        margin-bottom: 4rem;
+        text-align: center;
       }
 
       // Social Links Container
@@ -645,64 +613,56 @@
     }
   }
 
-  // Contact Container
-  .contact-container {
+  // Projects Container
+  .projects-container {
     max-width: 380px;
     margin: 3rem auto 4rem auto;
 
-    h1 {
+    .my-projects {
       font-family: $heading-font;
       font-size: 5rem;
     }
 
-    .form-container {
-      margin: 4rem 0 2rem 0;
-      font-size: 1.6rem;
-      font-weight: 500;
-      line-height: 1.2;
-      padding: 0 1rem;
+    .projects {
+      .project {
+        grid-template-columns: 1fr;
+        margin-bottom: 3rem;
 
-      .form {
-        padding: 4rem;
-        background-color: #ffffff;
-        color: $base-color;
-        min-width: 45rem;
-
-        .names {
+        .left {
+          padding-right: 0rem;
           margin-bottom: 3rem;
-          flex-direction: column;
-          .first-name {
-            margin-right: 0rem;
-            margin-bottom: 3rem;
+          .project-title {
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+          }
+          .project-details {
+            margin-bottom: 2rem;
+            font-size: 1.6rem;
+          }
+          .btn-visit {
+            padding: 0.75rem 1rem;
+            font-size: 1.8rem;
+          }
+          .btn-source {
+            padding: 0.75rem 1rem;
+            font-size: 1.8rem;
+          }
+          a {
+            margin-right: 1rem;
           }
         }
-
-        .email {
-          margin-bottom: 3rem;
-        }
-        .message {
-          margin-bottom: 3rem;
-        }
-        // Label styling
-        label {
-          margin-bottom: 1rem;
-        }
-
-        // Input values styling
-        input {
-          font-size: 1.6rem;
-        }
-
-        // Textarea
-        textarea {
-          resize: none;
-          font-size: 1.6rem;
-        }
       }
-      .submit-btn {
-        padding: 0.75rem 1rem;
-
-        font-size: 1.6rem;
+      .line-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .line {
+          width: 8rem;
+          height: 3px;
+          background-color: #ffffff;
+          margin: 2rem 0;
+          text-align: center;
+        }
       }
     }
   }

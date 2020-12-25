@@ -39,99 +39,6 @@
       background-color: #fff;
       color: #1c4e46; }
 
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 1140px;
-  margin: 4rem auto 6rem auto;
-  padding: 0 1rem;
-  font-family: "Montserrat", sans-serif; }
-  .contact-container h1 {
-    font-family: "Oswald", sans-serif;
-    font-size: 8rem;
-    margin: 0 0 2rem 0;
-    letter-spacing: 1px; }
-  .contact-container .form-container {
-    margin: 6rem 0 3rem 0;
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 1.8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
-    .contact-container .form-container .form {
-      padding: 6rem;
-      background-color: #ffffff;
-      color: #1c4e46;
-      min-width: 70rem; }
-      .contact-container .form-container .form .names {
-        display: flex;
-        margin-bottom: 3rem; }
-        .contact-container .form-container .form .names .first-name {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: left;
-          margin-right: 2rem;
-          flex: 1; }
-        .contact-container .form-container .form .names .last-name {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: left;
-          flex: 1; }
-      .contact-container .form-container .form .email {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        margin-bottom: 3rem; }
-      .contact-container .form-container .form .message {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        margin-bottom: 3rem; }
-      .contact-container .form-container .form label {
-        margin-bottom: 1.5rem; }
-      .contact-container .form-container .form input {
-        font-size: 1.8rem;
-        color: #1c4e46;
-        padding: 0.75rem 1rem;
-        border: 0;
-        border-bottom: 3px solid #1c4e46;
-        outline: none; }
-        .contact-container .form-container .form input:focus {
-          border-bottom: 3px solid orange; }
-      .contact-container .form-container .form textarea {
-        resize: none;
-        font-size: 1.8rem;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        color: #1c4e46;
-        padding: 0.75rem 1rem;
-        border: 0;
-        border-bottom: 3px solid #1c4e46;
-        outline: none; }
-        .contact-container .form-container .form textarea:focus {
-          border-bottom: 3px solid orange; }
-    .contact-container .form-container .submit-btn {
-      cursor: pointer;
-      border: 0;
-      padding: 1rem 1.5rem;
-      border: 1px solid #1c4e46;
-      background-color: #1c4e46;
-      color: #fff;
-      font-size: 2rem;
-      transition: all 0.2s ease; }
-      .contact-container .form-container .submit-btn:hover {
-        border: 1px solid #1c4e46;
-        background-color: #fff;
-        color: #1c4e46; }
-
 body {
   font-size: 1.6rem;
   line-height: 1.6;
@@ -290,6 +197,73 @@ a {
     font-size: 8rem;
     margin: 0 0 2rem 0;
     letter-spacing: 1px; }
+  .projects-container .projects {
+    font-family: "Montserrat", sans-serif; }
+    .projects-container .projects img {
+      display: block;
+      width: 100%; }
+    .projects-container .projects .project {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 6rem; }
+      .projects-container .projects .project .left {
+        padding-right: 2rem; }
+        .projects-container .projects .project .left .project-title {
+          margin-bottom: 2rem;
+          font-size: 3rem; }
+        .projects-container .projects .project .left .project-details {
+          margin-bottom: 3rem;
+          font-size: 1.8rem; }
+        .projects-container .projects .project .left .btn-visit {
+          padding: 1rem 1.5rem;
+          border: 1px solid #fff;
+          font-size: 2rem;
+          transition: all 0.2s ease; }
+          .projects-container .projects .project .left .btn-visit:hover {
+            background-color: #fff;
+            color: #1c4e46;
+            border: 1px solid #fff; }
+        .projects-container .projects .project .left .btn-source {
+          padding: 1rem 1.5rem;
+          background-color: #fff;
+          border: 1px solid #fff;
+          color: #1c4e46;
+          font-size: 2rem;
+          transition: all 0.2s ease; }
+          .projects-container .projects .project .left .btn-source:hover {
+            background-color: #1c4e46;
+            color: #fff;
+            border: 1px solid #fff; }
+        .projects-container .projects .project .left a {
+          margin-right: 1.5rem; }
+  .projects-container .hireme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; }
+    .projects-container .hireme .line {
+      width: 10rem;
+      height: 3px;
+      background-color: #ffffff;
+      margin: 7.5rem 0 5rem 0; }
+    .projects-container .hireme .hire-details {
+      font-size: 2rem;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 2rem; }
+    .projects-container .hireme .btn-hire {
+      padding: 1rem 1.5rem;
+      background-color: #fff;
+      border: 1px solid #fff;
+      color: #1c4e46;
+      font-size: 2rem;
+      transition: all 0.2s ease; }
+      .projects-container .hireme .btn-hire:hover {
+        background-color: #1c4e46;
+        color: #fff;
+        border: 1px solid #fff; }
 
 @media screen and (max-width: 80em) {
   .header-container {
@@ -309,10 +283,19 @@ a {
     .about-container .about-details {
       font-size: 1.7rem;
       line-height: 1.7; }
-  .contact-container {
+  .projects-container {
     max-width: 980px; }
-    .contact-container h1 {
-      font-size: 7rem; } }
+    .projects-container .my-projects {
+      font-family: "Oswald", sans-serif;
+      font-size: 7rem; }
+    .projects-container .projects .project {
+      margin-bottom: 5rem; }
+      .projects-container .projects .project .left {
+        padding-right: 1rem; }
+        .projects-container .projects .project .left .project-title {
+          font-size: 2.5rem; }
+        .projects-container .projects .project .left .project-details {
+          margin-bottom: 2.5rem; } }
 
 @media screen and (min-width: 48em) and (max-width: 61.25em) {
   .navbar {
@@ -343,13 +326,6 @@ a {
       font-size: 1.8rem; }
   .footer-main .footer-container .copyright {
     font-size: 1.4rem; }
-  .footer-main .footer-container .email-container p {
-    font-size: 1.4rem; }
-  .footer-main .footer-container .email-container a {
-    font-size: 1.4rem;
-    border-bottom: 1px dotted #1c4e46; }
-    .footer-main .footer-container .email-container a:hover {
-      border-bottom: 1px solid #1c4e46; }
   .footer-main .footer-container .social-container p {
     font-size: 1.4rem; }
   .footer-main .footer-container .social-container .social-links a {
@@ -370,23 +346,27 @@ a {
       line-height: 1.6; }
     .about-container .work-btn {
       font-size: 1.8rem; }
-  .contact-container {
+  .projects-container {
     max-width: 880px;
     margin: 3rem auto 5rem auto; }
-    .contact-container h1 {
+    .projects-container .my-projects {
       font-size: 6.5rem; }
-    .contact-container .form-container {
-      margin: 4rem 0 3rem 0;
-      font-size: 1.6rem; }
-      .contact-container .form-container .form {
-        padding: 4rem; }
-        .contact-container .form-container .form input {
+    .projects-container .projects .project {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 4rem; }
+      .projects-container .projects .project .left {
+        padding-right: 1rem; }
+        .projects-container .projects .project .left .project-title {
+          margin-bottom: 1.5rem;
+          font-size: 2rem; }
+        .projects-container .projects .project .left .project-details {
+          margin-bottom: 2rem;
           font-size: 1.6rem; }
-        .contact-container .form-container .form textarea {
-          font-size: 1.6rem; }
-      .contact-container .form-container .submit-btn {
-        padding: 0.75rem 1rem;
-        font-size: 1.8rem; } }
+        .projects-container .projects .project .left .btn-visit {
+          font-size: 1.8rem; }
+        .projects-container .projects .project .left .btn-source {
+          font-size: 1.8rem; } }
 
 @media screen and (min-width: 33.75em) and (max-width: 48em) {
   .navbar {
@@ -435,13 +415,6 @@ a {
       .footer-main .footer-container .copyright {
         font-size: 1.6rem;
         margin-bottom: 2rem; }
-      .footer-main .footer-container .email-container {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 2rem; }
-        .footer-main .footer-container .email-container p {
-          margin-right: 0rem;
-          margin-bottom: 0.5rem; }
       .footer-main .footer-container .social-container {
         flex-direction: column;
         align-items: flex-start; }
@@ -476,41 +449,33 @@ a {
     .about-container .work-btn {
       padding: 0.75rem 1rem;
       font-size: 1.6rem; }
-  .contact-container {
+  .projects-container {
     max-width: 680px;
     margin: 3rem auto 4rem auto; }
-    .contact-container h1 {
-      font-size: 5.5rem;
-      line-height: 1.2; }
-    .contact-container .form-container {
-      margin: 4rem 0 2rem 0;
-      font-size: 1.6rem;
-      padding: 0 1rem;
-      line-height: 1.5; }
-      .contact-container .form-container .form {
-        padding: 3rem;
-        min-width: 60rem; }
-        .contact-container .form-container .form .names {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 3rem; }
-          .contact-container .form-container .form .names .first-name {
-            margin-right: 0rem;
-            margin-bottom: 3rem; }
-        .contact-container .form-container .form .email {
-          margin-bottom: 3rem; }
-        .contact-container .form-container .form .message {
-          margin-bottom: 3rem; }
-        .contact-container .form-container .form label {
-          margin-bottom: 1.5rem; }
-        .contact-container .form-container .form input {
+    .projects-container .my-projects {
+      line-height: 1.2;
+      font-size: 5.5rem; }
+    .projects-container .projects .project {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-bottom: 4rem; }
+      .projects-container .projects .project .left {
+        padding-right: 0rem;
+        margin-bottom: 2rem; }
+        .projects-container .projects .project .left .project-title {
+          margin-bottom: 1.5rem;
+          font-size: 2rem; }
+        .projects-container .projects .project .left .project-details {
+          margin-bottom: 2rem;
           font-size: 1.6rem; }
-        .contact-container .form-container .form textarea {
-          resize: none;
-          font-size: 1.6rem; }
-      .contact-container .form-container .submit-btn {
-        padding: 0.75rem 1rem;
-        font-size: 1.8rem; } }
+        .projects-container .projects .project .left .btn-visit {
+          padding: 0.75rem 1rem;
+          font-size: 1.8rem; }
+        .projects-container .projects .project .left .btn-source {
+          padding: 0.75rem 1rem;
+          font-size: 1.8rem; }
+        .projects-container .projects .project .left a {
+          margin-right: 1rem; } }
 
 @media screen and (max-width: 33.7em) {
   .overlay {
@@ -576,7 +541,7 @@ a {
   .header-container {
     justify-content: flex-start;
     max-width: 380px;
-    height: 60vh; }
+    height: 65vh; }
     .header-container .header-desc {
       font-size: 5rem;
       line-height: 1.2;
@@ -589,20 +554,16 @@ a {
       .header-container .readmore-container .btn-about {
         padding: 0.75rem 1rem; }
   .footer-main {
-    height: 30vh; }
+    height: 25vh; }
     .footer-main .footer-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start; }
+      align-items: center; }
       .footer-main .footer-container .copyright {
         font-size: 1.4rem;
-        margin-bottom: 2rem; }
-      .footer-main .footer-container .email-container {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        margin-bottom: 4rem; }
+        margin-bottom: 2rem;
+        text-align: center; }
       .footer-main .footer-container .social-container {
         display: flex;
         align-items: center;
@@ -644,43 +605,42 @@ a {
       margin-top: 2rem;
       padding: 0.75rem 1rem;
       font-size: 2.4rem; }
-  .contact-container {
+  .projects-container {
     max-width: 380px;
     margin: 3rem auto 4rem auto; }
-    .contact-container h1 {
+    .projects-container .my-projects {
       font-family: "Oswald", sans-serif;
       font-size: 5rem; }
-    .contact-container .form-container {
-      margin: 4rem 0 2rem 0;
-      font-size: 1.6rem;
-      font-weight: 500;
-      line-height: 1.2;
-      padding: 0 1rem; }
-      .contact-container .form-container .form {
-        padding: 4rem;
+    .projects-container .projects .project {
+      grid-template-columns: 1fr;
+      margin-bottom: 3rem; }
+      .projects-container .projects .project .left {
+        padding-right: 0rem;
+        margin-bottom: 3rem; }
+        .projects-container .projects .project .left .project-title {
+          margin-bottom: 1.5rem;
+          font-size: 2.2rem; }
+        .projects-container .projects .project .left .project-details {
+          margin-bottom: 2rem;
+          font-size: 1.6rem; }
+        .projects-container .projects .project .left .btn-visit {
+          padding: 0.75rem 1rem;
+          font-size: 1.8rem; }
+        .projects-container .projects .project .left .btn-source {
+          padding: 0.75rem 1rem;
+          font-size: 1.8rem; }
+        .projects-container .projects .project .left a {
+          margin-right: 1rem; }
+    .projects-container .projects .line-container {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .projects-container .projects .line-container .line {
+        width: 8rem;
+        height: 3px;
         background-color: #ffffff;
-        color: #1c4e46;
-        min-width: 45rem; }
-        .contact-container .form-container .form .names {
-          margin-bottom: 3rem;
-          flex-direction: column; }
-          .contact-container .form-container .form .names .first-name {
-            margin-right: 0rem;
-            margin-bottom: 3rem; }
-        .contact-container .form-container .form .email {
-          margin-bottom: 3rem; }
-        .contact-container .form-container .form .message {
-          margin-bottom: 3rem; }
-        .contact-container .form-container .form label {
-          margin-bottom: 1rem; }
-        .contact-container .form-container .form input {
-          font-size: 1.6rem; }
-        .contact-container .form-container .form textarea {
-          resize: none;
-          font-size: 1.6rem; }
-      .contact-container .form-container .submit-btn {
-        padding: 0.75rem 1rem;
-        font-size: 1.6rem; } }
+        margin: 2rem 0;
+        text-align: center; } }
 
 * {
   margin: 0;

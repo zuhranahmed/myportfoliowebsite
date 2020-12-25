@@ -23,4 +23,90 @@ $heading-font: "Oswald", sans-serif;
     margin: 0 0 2rem 0;
     letter-spacing: 1px;
   }
+
+  .projects {
+    font-family: $base-font;
+    img {
+      display: block;
+      width: 100%;
+    }
+    .project {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 6rem;
+
+      .left {
+        padding-right: 2rem;
+        .project-title {
+          margin-bottom: 2rem;
+          font-size: 3rem;
+        }
+        .project-details {
+          margin-bottom: 3rem;
+          font-size: 1.8rem;
+        }
+        .btn-visit {
+          padding: 1rem 1.5rem;
+          border: 1px solid #fff;
+          font-size: 2rem;
+          transition: all 0.2s ease;
+          &:hover {
+            background-color: #fff;
+            color: #1c4e46;
+            border: 1px solid #fff;
+          }
+        }
+        .btn-source {
+          padding: 1rem 1.5rem;
+          background-color: #fff;
+          border: 1px solid #fff;
+          color: #1c4e46;
+          font-size: 2rem;
+          transition: all 0.2s ease;
+          &:hover {
+            background-color: #1c4e46;
+            color: #fff;
+            border: 1px solid #fff;
+          }
+        }
+        a {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .hireme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    .line {
+      width: 10rem;
+      height: 3px;
+      background-color: #ffffff;
+      margin: 7.5rem 0 5rem 0;
+    }
+    .hire-details {
+      font-size: 2rem;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+    .btn-hire {
+      padding: 1rem 1.5rem;
+      background-color: #fff;
+      border: 1px solid #fff;
+      color: #1c4e46;
+      font-size: 2rem;
+      transition: all 0.2s ease;
+      &:hover {
+        background-color: #1c4e46;
+        color: #fff;
+        border: 1px solid #fff;
+      }
+    }
+  }
 }
