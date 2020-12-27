@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-sass": "node-sass -w sass/main.scss css/style.css"
+    "build-sass": "node-sass -w sass/main.scss css/style.css",
+    "compile-css": "node-sass sass/main.scss css/style.comp.css",
+    "compress-css": "node-sass css/style.comp.css css/style.min.css --output-style compressed"
   },
   "author": "zuhranahmed",
   "license": "ISC",
