@@ -15,8 +15,7 @@
     letter-spacing: 1px; }
   .about-container .my-image img {
     width: 100%;
-    display: block;
-    display: none; }
+    display: block; }
   .about-container .about-details {
     margin: 6rem 0 3rem 0;
     font-size: 1.8rem;
